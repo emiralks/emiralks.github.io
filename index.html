@@ -83,6 +83,13 @@ body{position:relative;isolation:isolate}
 .identity{display:flex;flex-direction:column;gap:3px;margin:0 0 26px;font-size:14px;color:var(--muted);letter-spacing:.02em}
 .identity span:first-child{color:var(--ink);font-weight:600}
 .hero>.identity{animation-delay:.16s}
+
+.skills-intro{font-size:14px;color:var(--muted);max-width:310px;margin:20px 0 0}
+.skill-groups{display:grid;gap:24px}
+.skill-group h3{font-size:12px;font-weight:600;letter-spacing:.035em;margin:0 0 12px}
+.skill-tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.skill-tags li{padding:6px 12px;font-size:12px;border:1px solid var(--line);border-radius:5px;background:var(--soft);color:var(--ink);transition:background-color .3s ease,border-color .3s ease}
+@media(max-width:650px){.header-right{width:100%;justify-content:space-between}nav{gap:16px}}
 </style>
 </head>
 <body>
@@ -91,7 +98,7 @@ body{position:relative;isolation:isolate}
 <div class="wrap">
 <header>
 <a class="brand" href="./" aria-label="Emir Alakus home">EA<span>.</span></a>
-<div class="header-right"><nav aria-label="Main navigation"><a href="#about">About</a><a href="#work">Work</a><a href="#contact">Connect <span aria-hidden="true">↗</span></a></nav><div class="header-tools">
+<div class="header-right"><nav aria-label="Main navigation"><a href="#about">About</a><a href="#skills">Skills</a><a href="#work">Work</a><a href="#contact">Connect <span aria-hidden="true">↗</span></a></nav><div class="header-tools">
 
 <button class="theme-toggle" type="button" aria-label="Switch to light theme" hidden>
 <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
@@ -111,12 +118,19 @@ body{position:relative;isolation:isolate}
 <div><p class="label">01 / About me</p><h2 id="about-title">Learning the foundations.<br>Looking ahead.</h2></div>
 <div class="copy"><p>I'm Emir, a Computer Science student at the University of North Texas. I'm building my technical foundation through my studies and looking forward to applying it to practical problems.</p><p>I'm currently seeking internships and job opportunities where I can gain hands-on experience, contribute to a team, and keep learning. I'm at the beginning of my career, with plenty to explore and a strong motivation to improve.</p></div>
 </section>
+<section class="section" id="skills" aria-labelledby="skills-title">
+<div><p class="label">02 / Skills &amp; tools</p><h2 id="skills-title">What I'm learning<br>&amp; working with.</h2><p class="skills-intro">Languages, frameworks, and tools I'm learning and using as I develop my technical skills.</p></div>
+<div class="skill-groups"><div class="skill-group"><h3>Programming &amp; Data</h3><ul class="skill-tags"><li>Python</li><li>SQL</li><li>Java</li><li>C++</li><li>JavaScript</li></ul></div>
+<div class="skill-group"><h3>Frameworks &amp; Libraries</h3><ul class="skill-tags"><li>React</li><li>Node.js</li><li>Django</li><li>LangChain</li></ul></div>
+<div class="skill-group"><h3>Cloud &amp; DevOps</h3><ul class="skill-tags"><li>AWS</li><li>Azure</li><li>Docker</li></ul></div>
+<div class="skill-group"><h3>Databases &amp; Tools</h3><ul class="skill-tags"><li>Snowflake</li><li>PostgreSQL</li><li>MongoDB</li><li>Git</li><li>Jira</li></ul></div></div>
+</section>
 <section class="section" id="work" aria-labelledby="work-title">
-<div><p class="label">02 / Selected work</p><h2 id="work-title">A space for<br>what comes next.</h2></div>
+<div><p class="label">03 / Selected work</p><h2 id="work-title">A space for<br>what comes next.</h2></div>
 <div class="empty"><span class="tag">Coming soon</span><h3>Projects will live here.</h3><p>As I build and complete projects, I'll share the work, what I learned, and the code behind it here.</p></div>
 </section>
 <section class="contact" id="contact" aria-labelledby="contact-title">
-<p class="label">03 / Get in touch</p><h2 id="contact-title">Let's connect.</h2>
+<p class="label">04 / Get in touch</p><h2 id="contact-title">Let's connect.</h2>
 <p>Have an internship, a job opportunity, or advice to share? I'd be happy to hear from you.</p>
 <div class="actions"><a class="button primary" href="https://www.linkedin.com/in/emirmuratalakus/">Say hello on LinkedIn <span aria-hidden="true">↗</span></a><a class="button" href="https://github.com/emiralks">GitHub <span aria-hidden="true">↗</span></a></div>
 </section>
