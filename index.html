@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Emir Murat Alakuş — GitHub ve LinkedIn bağlantıları.">
+  <meta name="color-scheme" content="light dark">
+  <title>Emir Murat Alakuş</title>
+  <style>
+    :root { color-scheme: light dark; --bg:#faf9f6; --text:#252521; --muted:#66665e; --line:#dcdcd3; --accent:#365a46; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.65; }
+    .page { max-width:800px; min-height:100svh; margin:auto; padding:32px clamp(24px,6vw,64px); display:flex; flex-direction:column; }
+    header { padding-bottom:22px; border-bottom:1px solid var(--line); font-size:14px; font-weight:600; letter-spacing:.04em; }
+    main { flex:1; display:flex; flex-direction:column; justify-content:center; padding:80px 0; }
+    .eyebrow { color:var(--accent); font-size:12px; font-weight:650; letter-spacing:.16em; text-transform:uppercase; }
+    h1 { margin:18px 0; font-family:Georgia,"Times New Roman",serif; font-size:clamp(42px,9vw,72px); line-height:1.1; font-weight:400; letter-spacing:-.045em; }
+    .intro { max-width:440px; color:var(--muted); margin:0; font-size:18px; }
+    nav { display:flex; flex-wrap:wrap; gap:14px; margin-top:36px; }
+    a { display:inline-flex; align-items:center; gap:24px; padding:12px 18px; border:1px solid var(--line); border-radius:6px; color:var(--text); text-decoration:none; font-size:15px; }
+    a:hover { border-color:var(--accent); color:var(--accent); }
+    a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
+    footer { border-top:1px solid var(--line); padding-top:20px; color:var(--muted); font-size:12px; }
+    @media (prefers-color-scheme:dark) { :root { --bg:#191b19; --text:#eeeee7; --muted:#b1b6ad; --line:#3c423b; --accent:#afc8a9; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>EMİR MURAT ALAKUŞ</header>
+    <main>
+      <span class="eyebrow">Merhaba, ben Emir.</span>
+      <h1>Emir Murat<br>Alakuş</h1>
+      <p class="intro">Hoş geldin. Sayfamı hazırlıyorum; bu sırada bana aşağıdaki bağlantılardan ulaşabilirsin.</p>
+      <nav aria-label="Profil bağlantıları">
+        <a href="https://github.com/emiralks">GitHub <span aria-hidden="true">↗</span></a>
+        <a href="https://www.linkedin.com/in/emirmuratalakus/">LinkedIn <span aria-hidden="true">↗</span></a>
+      </nav>
+    </main>
+    <footer>Emir Murat Alakuş</footer>
+  </div>
+</body>
+</html>
