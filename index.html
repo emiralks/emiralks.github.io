@@ -90,6 +90,11 @@ body{position:relative;isolation:isolate}
 .skill-tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
 .skill-tags li{padding:6px 12px;font-size:12px;border:1px solid var(--line);border-radius:5px;background:var(--soft);color:var(--ink);transition:background-color .3s ease,border-color .3s ease}
 @media(max-width:650px){.header-right{width:100%;justify-content:space-between}nav{gap:16px}}
+
+/* Portrait complements the existing introduction and theme palette. */
+.hero-portrait{float:right;display:block;width:180px;height:220px;margin:28px 0 24px 36px;object-fit:cover;object-position:55% center;border:1px solid var(--line);border-radius:18px;box-shadow:0 12px 32px #00000018}
+.hero::after{content:"";display:table;clear:both}
+@media(max-width:650px){.hero-portrait{float:none;width:128px;height:156px;margin:28px 0 0;border-radius:14px}}
 </style>
 </head>
 <body>
@@ -108,6 +113,7 @@ body{position:relative;isolation:isolate}
 <main id="main">
 <section class="hero" aria-labelledby="intro-title">
 <div class="status"><span class="dot" aria-hidden="true"></span>Open to internships &amp; job opportunities</div>
+<img class="hero-portrait" src="assets/emir-alakus.webp" alt="Emir Alakus" width="180" height="220" fetchpriority="high">
 <h1 id="intro-title">Emir Alakus<span style="color:#74879a">.</span></h1>
 <p class="identity"><span>Computer Science Student</span><span>University of North Texas · Junior</span></p>
 <p class="lead">I'm a <strong>junior studying Computer Science at UNT</strong>, eager to put what I'm learning into practice. I'm looking for opportunities to contribute, learn from experienced teammates, and grow as a developer.</p>
